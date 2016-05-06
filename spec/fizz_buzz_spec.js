@@ -17,5 +17,8 @@ describe("fizz_buzz", function () {
     it("returns 'buzz' if number is divisible by 5", function () {
         expect(subject.fizz_buzz(10)).toEqual('buzz');
     });
+    it("returns the same number if number is not divisible by 3,5 or 15", function () {
+        expect(subject.fizz_buzz(14)).toEqual('14');
+    });
 
 });
