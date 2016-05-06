@@ -1,17 +1,21 @@
 function Fizz_buzz() {};
 
 Fizz_buzz.prototype.fizz_buzz = function(number) {
-  if(number%15 == 0){
+  if(this.has_zero_divider(number, 15) == 0){
     return 'fizz buzz';
   }
-  else if(number%3 == 0){
+  else if(this.has_zero_divider(number, 3) == 0){
     return 'fizz';
   }
-  else if(number%5 == 0){
+  else if(this.has_zero_divider(number, 5) == 0){
     return 'buzz';
   }
   else{
     return number.toString();
   }
+}
 
+Fizz_buzz.prototype.has_zero_divider = function (number, divider) {
+  var result = number % divider;
+  return result
 }

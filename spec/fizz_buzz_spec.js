@@ -5,9 +5,6 @@ describe("fizz_buzz", function () {
         subject = new Fizz_buzz();
     });
 
-    afterEach(function () {
-        /* ... Tear it down ... */
-    });
     it("returns 'fizz buzz' if number is divisible by 15", function (){
         expect(subject.fizz_buzz(15)).toEqual('fizz buzz');
     });
