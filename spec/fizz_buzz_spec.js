@@ -10,6 +10,6 @@ describe("fizz_buzz", function () {
     });
 
     it("returns 'fizz' if number is divisible by 3", function () {
-        expect(subject.fizz_buzz(3)).toEqual('fizz');
+        expect(subject.fizz_buzz(33)).toEqual('fizz');
     });
 });

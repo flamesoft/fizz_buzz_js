@@ -1,5 +1,10 @@
 function Fizz_buzz() {};
 
 Fizz_buzz.prototype.fizz_buzz = function(number) {
-  return 'fizz';
+  if(number%3 == 0){
+    return 'fizz';
+  }
+  else{
+    return number.toString();
+  }
 }
