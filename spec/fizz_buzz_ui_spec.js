@@ -30,5 +30,11 @@ describe('Partial sample', function() {
       expect($('#display_message').text()).toBe('fizz');
     });
 
+    it("return 11 for input 11", function() {
+      $('#text').val('11');
+      $('#click_me').trigger('click');
+      expect($('#display_message').text()).toBe('11');
+    });
+
   });
 });
