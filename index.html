@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css">
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.js"></script>
+    <script src="assets/js/fizz_buzz.js"></script>
+    </head>
+  <body>
+    <div class="row">
+    <div class="medium-6 columns">
+    <h1>Fizz Buzz</h1>
+    <input type="text" id="text" placeholder="Input a number">
+    <input type="button" id="click_me" value="Click me" onclick="calculate()"
+     class="success button">
+    <div>
+      <span id="display_message"></span>
+    </div>
+  </body>
+
+<script type="text/javascript">
+  function calculate(){
+    var obj = new Fizz_buzz();
+    $('#display_message').text(obj.fizz_buzz($('#text').val()));
+  }
+</script>
+
+</html>
