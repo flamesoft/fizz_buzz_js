@@ -24,5 +24,11 @@ describe('Partial sample', function() {
       expect($('#display_message').text()).toBe('buzz');
     });
 
+    it("return buzz for input 12", function() {
+      $('#text').val('12');
+      $('#click_me').trigger('click');
+      expect($('#display_message').text()).toBe('fizz');
+    });
+
   });
 });
