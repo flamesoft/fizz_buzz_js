@@ -1,10 +1,16 @@
 <h3>Fizz_buzz Fixture</h3>
-<input type="text" id="text" placeholder="Input some text">
-<input type="button" id="click_me" value="Click me">
+<input type="text" id="text" placeholder="Input a number">
+<input type="button" id="click_me" value="Click me" onclick="calculate()">
 <div>
   <span id="display_message"></span>
 </div>
 
+<script src="/Users/yanzhang/Documents/CraftAcademy/week2_challenge/fizz_buzz_js/assets/js/fizz_buzz.js"></script>
 <script type="text/javascript">
-  $(document).ready(onReadyEvents);
+  function calculate(){
+    
+    var obj = new Fizz_buzz();
+    $('#display_message').text(obj.fizz_buzz('3'));
+
+  }
 </script>

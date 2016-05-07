@@ -10,12 +10,12 @@ describe('Partial sample', function() {
     // you can do it here.
   });
 
-  describe("displays text", function() {
+  describe("displays fizz when input is divisible by 3", function() {
 
     it("when button is clicked", function() {
-      $('#text').val('Some random text...');
+      $('#text').val('3');
       $('#click_me').trigger('click');
-      expect($('#display_message').text()).toBe('Some random text...');
+      expect($('#display_message').text()).toBe('fizz');
     });
   });
 });
