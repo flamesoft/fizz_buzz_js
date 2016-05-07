@@ -10,12 +10,19 @@ describe('Partial sample', function() {
     // you can do it here.
   });
 
-  describe("displays fizz when input is divisible by 3", function() {
+  describe("displays correct number by input", function() {
 
-    it("when button is clicked", function() {
-      $('#text').val('3');
+    it("return fizz buzz for input 30", function() {
+      $('#text').val('30');
       $('#click_me').trigger('click');
-      expect($('#display_message').text()).toBe('fizz');
+      expect($('#display_message').text()).toBe('fizz buzz');
     });
+
+    it("return buzz for input 5", function() {
+      $('#text').val('5');
+      $('#click_me').trigger('click');
+      expect($('#display_message').text()).toBe('buzz');
+    });
+
   });
 });
