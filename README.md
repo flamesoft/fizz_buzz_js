@@ -26,7 +26,6 @@ Once downloaded, you need to install all dependencies. Run
 ```
 $ npm install
 ```
-
 ####Usage
 You can use this setup to test your units and your jQuery events. Place your JavaScript code in `assets/js/` folder and partials in `spec/fixtures/` folder.
 
