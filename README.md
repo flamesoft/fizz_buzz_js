@@ -1,7 +1,18 @@
 ## Fizz_buzz web
-This is fizz_buzz web implemented with javascript.
+This is fizz_buzz web implemented with javascript and html.
+The index.html page calculates input number and shows "fizz" for all the numbers
+divisible by 3, "buzz" for all the numbers divisible by 5, and "fizz buzz" for
+all the numbers divisible by 15. It shows the number if it is not divisible by 3, 5
+or 15.
 
-## JS Test Boilerplate 0.1 (WIP)
+###Tests
+Tests are added in the following files.
+
+```javascript
+* spec/fizz_buzz_spec.js
+* spec/fizz_buzz_ui_spec.js
+
+### JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/karma-jquery-jasmine_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CraftAcademy/karma-jquery-jasmine_boilerplate?branch=master)
 
@@ -26,23 +37,9 @@ Once downloaded, you need to install all dependencies. Run
 ```
 $ npm install
 ```
-####Usage
-You can use this setup to test your units and your jQuery events. Place your JavaScript code in `assets/js/` folder and partials in `spec/fixtures/` folder.
-
-Your specs need to be end with `_spec.js` (e.g. `fizz_buzz_spec.js`)
-
+####Run Tests
 Run tests with
 ```
 $ npm test
 
-# or
-
-$ karma start karma.conf.js
 ```
-
-####Tests
-Tests are added in the following files.
-
-```javascript
-# spec/fizz_buzz_spec.js
-# spec/fizz_buzz_ui_spec.js
