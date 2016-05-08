@@ -8,7 +8,6 @@ or 15.
 ###Tests
 Tests are added in the following files.
 
-```javascript
 * spec/fizz_buzz_spec.js
 * spec/fizz_buzz_ui_spec.js
 
